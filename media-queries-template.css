@@ -1,0 +1,58 @@
+/* MOBILE FIRST STYLE SHEET */
+
+/* Important - this stylesheet is used to extend and override bootstrap styles. */
+/* The link to this style sheeet MUST COME AFTER THE LINK TO bootstrap.css */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: red;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+
+}
+
+.grid div {
+	background-color: red;
+	padding: 1em;
+	color: red;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	
+
+}	
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	
+}

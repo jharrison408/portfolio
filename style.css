@@ -1,0 +1,230 @@
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bgheader h1, .bgheader p {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hideme {
+	opacity: 0;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	transition-duration: 1s;
+}
+
+.icon:hover {
+	transform: rotate(360deg); 
+}
+
+.img-fluid {
+	border-radius: 15px;
+	box-shadow: 1px 1px 3px gray;
+}
+	
+.color-overlay {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	background: #5628E8;
+	opacity: 0.4;
+	position: absolute;
+	z-index: -1;
+}
+.bgheader {
+	z-index: 10;
+}
+.jumbotron .bgheader .display-3 {
+	font-family: 'Bebas Neue', cursive;
+	color: white;
+	
+}
+.jumbotron .bgheader p {
+	font-family: 'Bebas Neue', cursive;
+}
+
+
+
+/* Section Titles*/
+.title {
+	color: #5628E8;
+	font-family: 'Lato', sans-serif;
+}
+hr {
+	border-color: #5628E8;
+}
+
+/* Projects Header Styles*/
+.project-title {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 125%;
+	line-height: 30px;
+}
+
+
+/* Navigation Styles*/
+#navbarNavAltMarkup .navbar-nav .nav-item {
+	color: #5628E8;
+}
+
+#navbarNavAltMarkup .navbar-nav .nav-item:hover {
+	color: blue;
+}
+
+/* Button Styles*/
+.btn-primary {
+	background-color: #3D09E8 !important;
+	border: #3D09E8;
+}
+
+.btn-primary:hover {
+	background-color: #5628E8 !important;
+	border: #5628E8;
+}
+
+
+/* MEDIA STYLES */
+@media (max-width: 576px) {
+	
+	.jumbotron {
+	height: 300px;
+	max-width: 100%;
+	background-image: url(code.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+	.jumbotron h1 {
+	font-size: 300%;
+	letter-spacing: 10px;
+}
+.jumbotron p {
+	font-size: 200%;
+	letter-spacing: 5px;
+}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+	.jumbotron {
+	height: 500px;
+	max-width: 100%;
+	background-image: url(code.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+	
+	.jumbotron h1 {
+	font-size: 350%;
+	letter-spacing: 10px;
+}
+.jumbotron p {
+	font-size: 250%;
+	letter-spacing: 5px;
+}
+}	
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	.jumbotron h1 {
+	font-size: 500%;
+	letter-spacing: 10px;
+}
+.jumbotron p {
+	font-size: 250%;
+	letter-spacing: 5px;
+}
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+	.jumbotron {
+	height: 800px;
+	max-width: 100%;
+	background-image: url(code.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+	.jumbotron h1 {
+		font-size: 600%;
+		letter-spacing: 10px;
+	}
+	.jumbotron p {
+		font-size: 350%;
+		letter-spacing: 5px;
+	}
+
+	
+}
